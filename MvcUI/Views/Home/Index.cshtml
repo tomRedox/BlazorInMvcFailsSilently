@@ -1,0 +1,18 @@
+﻿@using SSB31Prev2.Data
+@using SSB31Prev2.Pages
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+  <div class="text-center">
+
+
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    @(await Html.RenderComponentAsync<Counter>(RenderMode.Server))
+    <br />
+    <br />
+    @(await Html.RenderComponentAsync<FetchData>(RenderMode.Server))
+
+  </div>

@@ -1,0 +1,19 @@
+﻿@page "/methoderror"
+@using SSB31Prev2.Data
+
+@inject MethodErrorService MethodErrorService
+
+<h1>Method Error Component</h1>
+
+
+
+@code {
+
+  protected override void OnInitialized()
+  {
+    base.OnInitialized();
+
+      MethodErrorService.DoingSomethingThrowsError();
+  }
+
+}

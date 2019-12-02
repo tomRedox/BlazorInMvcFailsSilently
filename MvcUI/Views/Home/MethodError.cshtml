@@ -1,0 +1,19 @@
+﻿@using SSB31Prev2.Data
+@using SSB31Prev2.Pages
+@{
+  ViewData["Title"] = "Method Error Component";
+}
+
+<base href="~/" />
+
+<div class="text-center">
+
+
+  <h1 class="display-4">Method Error Component</h1>
+  <p>Blazor gold bar IS shown</p>
+
+  <br />
+
+  @(await Html.RenderComponentAsync<MethodErrorComponent>(RenderMode.Server))
+
+</div>
